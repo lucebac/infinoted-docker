@@ -2,7 +2,7 @@ FROM alpine:3.6
 
 LABEL maintainer="lucebac <docker@lucebac.net>"
 
-ENV VERSION=0.7.0 \
+ENV VERSION=0.7.1 \
     EXE_SUFFIX=0.7
 
 RUN apk add --update --no-cache glib-dev gnutls-dev libgsasl-dev libxml2-dev \
