@@ -14,6 +14,7 @@ RUN apk add --update --no-cache glib-dev gnutls-dev libgsasl-dev libxml2-dev \
     cd libinfinity-$VERSION && \
     ./configure && \
     make && make install && \
+    cd / && rm -rf libinfinity-$VERSION && \
     ln -s `which infinoted-$EXE_SUFFIX` /usr/local/bin/infinoted && \
     apk del gcc g++ git make tar wget
 
